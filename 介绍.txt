@@ -1,0 +1,2 @@
+1.springboot,使用cache缓存数据，再保存到redis中，再从redis中取
+2.使用redistemplate,保存String，hash,list类型的数据到redis中，再从redis中取

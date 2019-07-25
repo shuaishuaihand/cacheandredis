@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kdgc.hand.mapper.UserMapper">
+    <select id="findUserById" resultType="java.util.HashMap">
+     select id ,name from user
+     <if test="id!=null">
+         WHERE id =#{id}
+    </if>
+    </select>
+
+    <select id="findUserList" resultType="com.kdgc.hand.domain.User">
+        select id ,name from user
+    </select>
+
+</mapper>
