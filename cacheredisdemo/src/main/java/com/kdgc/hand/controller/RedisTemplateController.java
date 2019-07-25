@@ -29,8 +29,6 @@ public class RedisTemplateController {
     @ResponseBody
     public Object testCache(Integer id) {
         return userService.testRedisTemplate(id);
-
-        Part
     }
 
     //String
