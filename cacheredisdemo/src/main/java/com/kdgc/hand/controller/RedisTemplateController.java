@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
+import javax.servlet.http.Part;
+import java.util.Collections;
 
 @Controller
 @RequestMapping(value = "/redis")
@@ -27,6 +29,8 @@ public class RedisTemplateController {
     @ResponseBody
     public Object testCache(Integer id) {
         return userService.testRedisTemplate(id);
+
+        Part
     }
 
     //String
